@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-family: "Open Sans";
+}
+
+html,body {
+    height: 100%;
+}
+
+.center {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+    padding: 0px 2%;
+}
+
+.center img {
+    margin: 17px;
+}
+
+.banner-container {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/header_bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0px 2%;
+}
+
+.banner-container > .center {
+    height: 100%;
+}
+
+.form {
+    padding: 15px;
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: white;
+    float: right;
+    position: relative;
+    margin-top: -15px;
+    border: 8px solid rgba(120,120,120,.3);
+    background-clip: padding-box;
+}
+
+.form h2 {
+    color: #ccc;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.form span {
+    margin-top: 20px;
+    color: #bbb;
+    display: block;
+    font-size: 17px;
+}
+
+.form input[type=text]{
+    margin-top: 8px;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+}
+
+.form .warning {
+    margin-top: 40px;
+    color: #bbb;
+    display: block;
+    font-size: 17px;
+}
+
+.form input[type=submit]{
+    width: 210px;
+    height: 45px;
+    color: white;
+    font-size: 22px;
+    background-color: #3c4077;
+    display: block;
+    margin: 60px auto;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 5px solid #484d90;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+    background-color: #2f325e;
+}
+
+.container-list {
+    float: left;
+    width: 520px;
+    height: 310px;
+    background-color: #21234382;
+    margin-top: 100px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.157);
+}
+
+.container-list ul {
+    list-style-position: inside;
+    padding: 40px;
+}
+
+.container-list li {
+    color: white;
+    margin-top: 40px;
+}
+
+.container-2 {
+    background-color: #ddd;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.container-2 h2 {
+    color: #3a3a3a;
+}
+
+.container-2 p {
+    color: #5f5f5f;
+    width: 100%;
+    max-width: 768px;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.arrow {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/arrow.png");
+    background-size: 100% 100%;
+    margin: -20px auto;
+}
+
+.section-1 > h2 {
+    margin-top: 90px;
+    text-align: center;
+    color:#484d90;
+    font-weight: normal;
+}
+
+.section-1-container {
+    width: 33.333%;
+    text-align: center;
+    padding: 90px;
+    float: left;
+}
+
+.section-1-container h2 {
+    margin-top: 20px;
+}
+
+.section-1-container p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    padding: 20px 0px;
+    border-top: 4px solid #888;
+    color: #888;
+    text-align: center;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 0px 2%;
+        text-align: center;
+    }
+
+    .banner-container {
+        width: 100%;
+        height: auto;
+        padding: 0px 2%;
+        text-align: center;
+    }
+
+    .container-list {
+        float: left;
+        width: 40%;
+        height: auto;
+    }
+
+    .form {
+        width: 60%;
+        max-width: 400px;
+        height: auto;
+        float: right;
+    }
+
+    .section-1-container {
+        width: 100%;
+        text-align: center;
+        padding: 90px;
+        float: none;
+        display: inline-block;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    .container-list {
+        width: 100%;
+        float: none;
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .form {
+        width: 100%;
+        float: none;
+        display: inline-block;
+        margin-top: 30px;
+    }
+}
